@@ -4,7 +4,7 @@
 
 ## Getting Started (Running The Program)
 
-If you'd like the executable directly, without the need to build, switch to the "compiled" branch and download the executable directly.
+If you'd like the executable directly, without the need to build, switch to the **compiled** branch and download the executable directly.
 
 ## Getting Started (Development)
 
@@ -13,25 +13,17 @@ On the other hand, if you want to build the project yourself, these instructions
 ### Prerequisites
 
 - Python 3.9 or newer
-- PyInstaller (for building the executable)
-
-### Installing Dependencies
-
-To install necessary dependencies, run the following command:
-
-```bash
-pip install -r requirements.txt
-```
+- PyInstaller (_for building the executable_)
 
 ## Running the Tests
 
 To run the tests in Visual Studio Code, follow these steps:
 
 1. Open the Command Palette (Ctrl+Shift+P).
-2. Type \`Python: Discover Tests\`.
-3. Choose \`unittest\` as the testing framework.
-4. Configure the test directory to \`./tests\`.
-5. Click the \`Run Tests\` icon in the left sidebar.
+2. Type `Python: Discover Tests`.
+3. Choose `unittest` as the testing framework.
+4. Configure the test directory to `./tests`.
+5. Click the `Run Tests` icon in the left sidebar.
 
 ## Building the Installer
 
@@ -44,7 +36,7 @@ To build the executable with PyInstaller in the Visual Studio Code command line:
 pyinstaller --onefile main.py
 ```
 
-3. The executable will be located in the \`dist\` directory.
+3. The executable will be located in the `dist` directory.
 
 ## Troubleshooting
 
@@ -58,11 +50,11 @@ pip install pyinstaller
 
 ### ModuleNotFoundError
 
-If you encounter a \`ModuleNotFoundError\`, ensure that your Python interpreter is correctly set up in Visual Studio Code and that all dependencies are installed in the environment you're using.
+If you encounter a `ModuleNotFoundError`, ensure that your Python interpreter is correctly set up in Visual Studio Code and that all dependencies are installed in the environment you're using.
 
 ### Test Discovery Fails
 
-Make sure your test files are located in the \`./tests\` directory and prefixed with \`test\_\`. Ensure that unittest discovery settings in Visual Studio Code are correctly configured as mentioned in the "Running the Tests" section.
+Make sure your test files are located in the `./tests` directory and prefixed with `test_`. Ensure that unittest discovery settings in Visual Studio Code are correctly configured as mentioned in the "Running the Tests" section.
 
 ## Contributing
 
