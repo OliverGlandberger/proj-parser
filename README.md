@@ -2,11 +2,11 @@
 
 **Proj Parser** is a command-line tool for generating a visual representation of directory structures while allowing for customizable exclusions via the ability to update a settings file, either manually or through the command-line tool.
 
-## Getting Started (Running The Program)
+## Downloading & Running
 
-If you'd like the executable directly, without the need to build, switch to the **compiled** branch and download the executable directly.
+If you'd like the executable directly, without the need to build, switch to the **compiled** branch in this repository and download the executable directly.
 
-## Getting Started (Development)
+## Getting Started (_Development_)
 
 On the other hand, if you want to build the project yourself, these instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
