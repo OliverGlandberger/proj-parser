@@ -29,7 +29,7 @@ To run the tests in Visual Studio Code, follow these steps:
 
 To build the executable with PyInstaller in the Visual Studio Code command line:
 
-1. Open the terminal in Visual Studio Code.
+1. Open the terminal in Visual Studio Code and make sure you're in the root folder of the project.
 2. Run the following command:
 
 ```bash
