@@ -19,7 +19,7 @@ On the other hand, if you want to build the project yourself, these instructions
 
 To run the tests in Visual Studio Code, follow these steps:
 
-1. Open the Command Palette (Ctrl+Shift+P).
+1. Open the Command Palette **(Ctrl+Shift+P)**.
 2. Type `Python: Discover Tests`.
 3. Choose `unittest` as the testing framework.
 4. Configure the test directory to `./tests`.
