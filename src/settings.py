@@ -11,7 +11,7 @@ class Settings:
             with open(self.settings_file, 'r') as f:
                 return json.load(f)
         else:
-            return {"exclusions": ["settings.json", "main.py"]}  # Default exclusions
+            return {"exclusions": ["settings.json", "main.py"], "use_gitignore": True}
 
     def save_settings(self):
         with open(self.settings_file, 'w') as f:
@@ -23,3 +23,7 @@ class Settings:
 
     def get_exclusions(self):
         return self.settings.get('exclusions', [])
+
+    def toggle_setting(self, setting_name):
+        self.settings[setting_name] = not self.settings.get(setting_name, False)
+        self.save_settings()

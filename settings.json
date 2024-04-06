@@ -1,0 +1,7 @@
+{
+    "exclusions": [
+        "settings.json",
+        "main.py"
+    ],
+    "use_gitignore": true
+}

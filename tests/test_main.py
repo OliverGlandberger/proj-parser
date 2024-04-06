@@ -20,7 +20,7 @@ class TestMain(unittest.TestCase):
         mocked_generate_directory_tree.assert_called_once_with('.', exclude=[])
 
         # Check that the available commands are printed and the expected tree output
-        self.assertIn(call("\nAvailable commands: run | add [exclusion] | query | exit"), mocked_print.call_args_list)
+        self.assertIn(call("\nAvailable commands: run | add [exclusion] | toggle [setting] | query | exit"), mocked_print.call_args_list)
         self.assertIn(call("Directory Tree"), mocked_print.call_args_list)
 
     @patch('main.Settings')
@@ -44,8 +44,14 @@ class TestMain(unittest.TestCase):
         main.main()
 
         # Check that the available commands are printed and the exclusions output
-        self.assertIn(call("\nAvailable commands: run | add [exclusion] | query | exit"), mocked_print.call_args_list)
+        self.assertIn(call("\nAvailable commands: run | add [exclusion] | toggle [setting] | query | exit"), mocked_print.call_args_list)
         self.assertIn(call("Current exclusions:", ['test_folder']), mocked_print.call_args_list)
+
+# TODO: Add function to add mock directory and files
+# TODO: ADd test to check to make sure that the output from the mock directory and files is correct
+    # NOTE: The test should add files "settings.json" and "main.py" and test running once normally
+    # NOTE: Run the test after adding one of each conceivable type of exclusion, which should already have a counterpart in the test data
+    # NOTE: Run the test after adding the .gitignore file, which additionally should have various relevant corresponding data in the test data
 
 if __name__ == '__main__':
     unittest.main()
